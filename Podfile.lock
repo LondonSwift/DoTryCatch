@@ -1,0 +1,13 @@
+PODS:
+  - LSImageThrowing (0.0.5)
+  - LSRepeater (0.0.5)
+
+DEPENDENCIES:
+  - LSImageThrowing
+  - LSRepeater
+
+SPEC CHECKSUMS:
+  LSImageThrowing: 2c29b7acc8e4c49d49af411c6aabb43db5ec9534
+  LSRepeater: f5dbef2ef12392c6ed33b05540cddf14d7e8ecad
+
+COCOAPODS: 0.38.2

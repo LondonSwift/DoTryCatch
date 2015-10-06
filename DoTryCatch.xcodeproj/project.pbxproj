@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		267753184F79095ECEF2F66C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04925F3682D3686FA36A13E /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D60F5BFD1BB5274900EA0F62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F5BFC1BB5274900EA0F62 /* AppDelegate.swift */; };
 		D60F5BFF1BB5274900EA0F62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F5BFE1BB5274900EA0F62 /* ViewController.swift */; };
 		D60F5C021BB5274900EA0F62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60F5C001BB5274900EA0F62 /* Main.storyboard */; };
 		D60F5C071BB5274900EA0F62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60F5C051BB5274900EA0F62 /* LaunchScreen.storyboard */; };
-		D63950821BB7CB22009BE0D5 /* Repeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63950811BB7CB22009BE0D5 /* Repeater.swift */; settings = {ASSET_TAGS = (); }; };
 		D63950841BB7D18D009BE0D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63950831BB7D18D009BE0D5 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60EDFBEF5AD9CA73A49A8590 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C04925F3682D3686FA36A13E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60F5BF91BB5274900EA0F62 /* DoTryCatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoTryCatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60F5BFC1BB5274900EA0F62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D60F5BFE1BB5274900EA0F62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D60F5C011BB5274900EA0F62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D60F5C061BB5274900EA0F62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D60F5C081BB5274900EA0F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D63950811BB7CB22009BE0D5 /* Repeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repeater.swift; sourceTree = "<group>"; };
 		D63950831BB7D18D009BE0D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC17AA788540FACBAAF99D8D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				267753184F79095ECEF2F66C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81B46DF995911D9AF802D51B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC17AA788540FACBAAF99D8D /* Pods.debug.xcconfig */,
+				60EDFBEF5AD9CA73A49A8590 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D60F5BF01BB5274900EA0F62 = {
 			isa = PBXGroup;
 			children = (
 				D60F5BFB1BB5274900EA0F62 /* DoTryCatch */,
 				D60F5BFA1BB5274900EA0F62 /* Products */,
+				81B46DF995911D9AF802D51B /* Pods */,
+				F70263ADEC98A4207C397A7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				D63950831BB7D18D009BE0D5 /* Assets.xcassets */,
-				D63950811BB7CB22009BE0D5 /* Repeater.swift */,
 				D60F5BFC1BB5274900EA0F62 /* AppDelegate.swift */,
 				D60F5BFE1BB5274900EA0F62 /* ViewController.swift */,
 				D60F5C001BB5274900EA0F62 /* Main.storyboard */,
@@ -67,6 +80,14 @@
 			path = DoTryCatch;
 			sourceTree = "<group>";
 		};
+		F70263ADEC98A4207C397A7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C04925F3682D3686FA36A13E /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D60F5C0B1BB5274900EA0F62 /* Build configuration list for PBXNativeTarget "DoTryCatch" */;
 			buildPhases = (
+				CDCF70E7B6CD26BBE62D3EEB /* Check Pods Manifest.lock */,
 				D60F5BF51BB5274900EA0F62 /* Sources */,
 				D60F5BF61BB5274900EA0F62 /* Frameworks */,
 				D60F5BF71BB5274900EA0F62 /* Resources */,
+				FDB895C1CD99871BCDB3A216 /* Embed Pods Frameworks */,
+				7F173114B6A8DAA830B5AE1C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,13 +156,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F173114B6A8DAA830B5AE1C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDCF70E7B6CD26BBE62D3EEB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FDB895C1CD99871BCDB3A216 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D60F5BF51BB5274900EA0F62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D60F5BFF1BB5274900EA0F62 /* ViewController.swift in Sources */,
-				D63950821BB7CB22009BE0D5 /* Repeater.swift in Sources */,
 				D60F5BFD1BB5274900EA0F62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +321,7 @@
 		};
 		D60F5C0C1BB5274900EA0F62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC17AA788540FACBAAF99D8D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DoTryCatch/Info.plist;
@@ -261,6 +333,7 @@
 		};
 		D60F5C0D1BB5274900EA0F62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60EDFBEF5AD9CA73A49A8590 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DoTryCatch/Info.plist;

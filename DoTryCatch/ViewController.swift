@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import LSRepeater
+import LSImageThrowing
 
 class ViewController: UIViewController {
     
@@ -15,16 +17,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     var counter = 1
-    var repeater: DDTRepeater?
+    var repeater: LSRepeater?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.repeater = DDTRepeater.repeater(0.5, execute: {
+        self.repeater = LSRepeater.repeater(0.5, execute: {
             
             let counterString = String(self.counter)
             
-            self.numberImageView.image = UIImage(named: counterString, placeholderOrThrow: "Placeholder" )
+            // This demonstrates the use of try!, im quite happy for the app to assert if the image doesnt exist, (an assert happens if a try! fails)
+            self.numberImageView.image = try! UIImage(named: counterString, placeholderOrThrow: "Placeholder" )
             
             self.label.text = counterString
             
@@ -32,12 +35,9 @@ class ViewController: UIViewController {
                 self.counter = 1
             }
         })
-        
-        // This demonstrates the use of try!, im quite happy for the app to assert if the image doesnt exist, (an assert happens if a try! fails)
+     
+        // Once again, if the image isnt found AND the placeholder isnt found, we just want the app to assert
         self.logoImageView.image = try! UIImage(namedOrThrow: "LondonSwift")
-        
-        
     }
-    
 }
 
